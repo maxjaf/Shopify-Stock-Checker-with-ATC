@@ -4,7 +4,7 @@ from urllib.parse import urlparse
 import requests
 import sys
 
-print('Made by @MJsneaks1')
+print('Written by @MJsneaks1')
 while True:
     def getURL():
         print('')
@@ -58,7 +58,10 @@ while True:
             print('{:<5} | {:<10} | {:<10} | {:10} | {:20} '.format('', 'size', 'stock', 'price', 'variants'))
             for i, (size, stock, price, variant) in enumerate(zip(sz, stk, prc, vrnt)):
                 print('{:<5} | {:<10} | {:<10} | {:10} | {:20} '.format(i, size, stock, '$'+price, variant))
-            print('Total stock: {:<5}'.format(sum(ttl)))
+            if sum(ttl) == 0:
+                print('Sold out!')
+            elif sum(ttl) != 0:
+                print('Total stock: {:<5}'.format(sum(ttl)))
         else:
             print('Stock could not be found :(')
             print('{:<5} | {:<10} | {:10} | {:20} '.format('', 'size', 'price', 'variants'))
