@@ -6,3 +6,5 @@ UPDATE: Added optional keyword checker instead of only being able to search a pr
 make sure to install all modules in requirements.txt before running the script
 
 chromedriver = https://sites.google.com/a/chromium.org/chromedriver/downloads
+
+tutorial: https://youtu.be/bU6pIvmguSI
