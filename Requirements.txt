@@ -4,4 +4,4 @@ beautifulsoup4==4.6.0
 urllib
 sys
 time
-https://sites.google.com/a/chromium.org/chromedriver/downloads
+
