@@ -37,7 +37,7 @@ while True:
                 keyword6 = input('Type another keyword to specify the product, or leave blank: ')
                 s = requests.Session()
                 f = s.get('https://'+website+'/sitemap_products_1.xml')
-                soup1 = BeautifulSoup(f.text, 'xml')
+                soup1 = BeautifulSoup(f.text, 'lxml')
                 products = soup1.find_all('url')
                 for url in products:
                     if keyword1 in url.get_text():
