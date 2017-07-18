@@ -4,6 +4,7 @@ from urllib.parse import urlparse
 import requests
 import sys
 import time
+import lxml
 
 print('Made by @MJsneaks1')
 while True:
@@ -56,7 +57,7 @@ while True:
         global soup
         s = requests.Session()
         r = s.get(URL+'.xml')
-        soup = BeautifulSoup(r.text, 'xml')
+        soup = BeautifulSoup(r.text, 'lxml')
         return soup
     def getItem():
         global item
