@@ -8,3 +8,5 @@ make sure to install all modules in requirements.txt before running the script
 chromedriver = https://sites.google.com/a/chromium.org/chromedriver/downloads
 
 tutorial: https://youtu.be/bU6pIvmguSI
+
+MADE FOR PYTHON 3
